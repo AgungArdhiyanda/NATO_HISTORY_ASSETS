@@ -23,11 +23,6 @@ public class Controller extends App {
         setMedia(new Media(new File(path).toURI().toString()));
     }
 
-    //public void musicPlayLoop(String a) {
-        //String path = "src/main/resources/com/nato/resource/" + a + ".mp3"; 
-        //setMedia(new Media(new File(path).toURI().toString())); 
-    //}
-
     @FXML
     private Button buttonEnter;
 
@@ -35,8 +30,6 @@ public class Controller extends App {
     public void enterMain() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("MainPage.fxml"));
         App.stage.setScene(new Scene(root));
-        //musicPlayLoop("NatoHymn");
-
     }
 
     // TOMBOL BUAT MASUK KE SETIAP KATEGORI
